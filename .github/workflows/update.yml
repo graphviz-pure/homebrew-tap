@@ -36,9 +36,10 @@ jobs:
         env:
           VERSION: ${{ steps.update.outputs.version }}
         run: |
-          git diff --quiet -- Formula/graphviz-pure.rb && { echo "already at $VERSION"; exit 0; }
+          # Stage first: a plain `git diff` ignores the untracked file of the first release.
+          git add Formula/graphviz-pure.rb
+          git diff --cached --quiet -- Formula/graphviz-pure.rb && { echo "already at $VERSION"; exit 0; }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Formula/graphviz-pure.rb
           git commit -m "graphviz-pure $VERSION"
           git push
