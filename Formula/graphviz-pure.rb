@@ -2,28 +2,28 @@
 class GraphvizPure < Formula
   desc "Pure-Rust port of Graphviz 16.1.0, same output on every platform (not affiliated with Graphviz)"
   homepage "https://graphviz-pure.github.io/"
-  version "0.2.3"
+  version "1.0.0"
   license "EPL-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v0.2.3/graphviz-pure-0.2.3-aarch64-apple-darwin.tar.gz"
-      sha256 "48c68a1f6e154156a787a5e15b0b6045761bad9f233ced0e69fff13f0a910947"
+      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.0.0/graphviz-pure-1.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "a8fb7e282e35a9f174c1872a9154c5ed5baffcb18ec321955347c16ff5b6bf17"
     end
     on_intel do
-      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v0.2.3/graphviz-pure-0.2.3-x86_64-apple-darwin.tar.gz"
-      sha256 "29ea70951684939f070d9a16bbfd4de9a5e968025ea12db8a2aed8fc10dfae7c"
+      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.0.0/graphviz-pure-1.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "888c5cb2d1278edfe17c9e83f59925183bd828ce2c8a3ca75c5fb9453fb71702"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v0.2.3/graphviz-pure-0.2.3-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "8fdc07c1dfcd8f9337433b4ac11fcc91ba3ca978becb252eca5dc75649e78d5e"
+      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.0.0/graphviz-pure-1.0.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "6bcc2ae59c7cfba13ed657726a153c1eb514f685e84f3756eed82d61a2d4fba7"
     end
     on_intel do
-      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v0.2.3/graphviz-pure-0.2.3-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ed21a154c767e67da516ea00c7d6286a849ab1bb1017cbe0d0c67a728e87504a"
+      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.0.0/graphviz-pure-1.0.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "26fa0ee7072f7b6cbb7beefef38baa8c4c434676d87523e8dd395420310df333"
     end
   end
 
