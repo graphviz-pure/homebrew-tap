@@ -13,6 +13,7 @@ class GraphvizPure < Formula
     on_intel do
       url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.0.0/graphviz-pure-1.0.0-x86_64-apple-darwin.tar.gz"
       sha256 "888c5cb2d1278edfe17c9e83f59925183bd828ce2c8a3ca75c5fb9453fb71702"
+
     end
   end
 
@@ -24,11 +25,19 @@ class GraphvizPure < Formula
     on_intel do
       url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.0.0/graphviz-pure-1.0.0-x86_64-unknown-linux-musl.tar.gz"
       sha256 "26fa0ee7072f7b6cbb7beefef38baa8c4c434676d87523e8dd395420310df333"
+
     end
   end
 
   def install
-    bin.install "graphviz-pure"
+    if (buildpath/"graphviz-pure-launcher").exist?
+      (libexec/"v3").install "graphviz-pure"
+      libexec.install "graphviz-pure-launcher" => "graphviz-pure"
+      resource("compat").stage { (libexec/"compat").install "graphviz-pure" }
+      bin.install_symlink libexec/"graphviz-pure"
+    else
+      bin.install "graphviz-pure"
+    end
   end
 
   test do
