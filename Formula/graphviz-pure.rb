@@ -2,35 +2,35 @@
 class GraphvizPure < Formula
   desc "Pure-Rust port of Graphviz 16.1.0, same output on every platform (not affiliated with Graphviz)"
   homepage "https://graphviz-pure.github.io/"
-  version "1.1.0"
+  version "1.2.0"
   license "EPL-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.1.0/graphviz-pure-1.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "acaa25e3ee3c664675039287bc0a4fe6e05c79359ae84a3ac783d7896e400025"
+      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.2.0/graphviz-pure-1.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "3ec1e3bb661371e2d00ba37107c90bba16fb2a1da43a99340e6ebb939d903555"
     end
     on_intel do
-      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.1.0/graphviz-pure-1.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "57003ae941628e2749374e1b0d2342a17b89615f1eb9c79ac55c22bf7fff9414"
+      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.2.0/graphviz-pure-1.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "d90f32e543e31cce34cbb1058f78fd918320fe57e0aae827c5dc467e8f7dd496"
       resource "compat" do
-        url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.1.0/graphviz-pure-1.1.0-x86_64-apple-darwin-compat.tar.gz"
-        sha256 "367736ca73370c34b27e68f93ea1aac8523d3cd95c24a154ccd697d88f506e24"
+        url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.2.0/graphviz-pure-1.2.0-x86_64-apple-darwin-compat.tar.gz"
+        sha256 "79a9b6e903688d8ade5f033fbabab3d91ec00b9f979f160ba4ace96530b552e7"
       end
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.1.0/graphviz-pure-1.1.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "ffff76009579899128e43678e2cab0ce031aaca2ddc09b6ba179637171d56db4"
+      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.2.0/graphviz-pure-1.2.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "9e1a0a6ba7fef4c6be00b0cc3d44d071e767520397b6116b7d2e8e8daec8f6c6"
     end
     on_intel do
-      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.1.0/graphviz-pure-1.1.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "743e3feb15df73ab10c26859736a78f45a9b17aa8630f5f2d7a7d911a358edd8"
+      url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.2.0/graphviz-pure-1.2.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "f215e04d6fb656ca411d92cd4fae97032914f6dbdb2a0eee76f0432472e9f7ef"
       resource "compat" do
-        url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.1.0/graphviz-pure-1.1.0-x86_64-unknown-linux-musl-compat.tar.gz"
-        sha256 "27dd98af3c3d270ac9fbac742a8c5d6c4b968b894ec7ebdb8213e24d2f8a9079"
+        url "https://github.com/graphviz-pure/graphviz-pure/releases/download/v1.2.0/graphviz-pure-1.2.0-x86_64-unknown-linux-musl-compat.tar.gz"
+        sha256 "b9c7a7841383580e7f539701846f88a0a2f71893600b907da4d6e899ac724e52"
       end
     end
   end
